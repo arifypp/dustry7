@@ -1,8 +1,8 @@
 /*
-  Theme Name: Name - Multipurpose HTML Template
-  Author: 
-  Support: admin@gmail.com
-  Description: Creative  HTML5 template.
+  Theme Name: Dustry7 - Industrial & Factory
+  Author: Md Arif
+  Support: arif@combrokers.com
+  Description: Dustry7 is a  Industrial & Factory HTML5 template.
   Version: 1.0
 */
 
@@ -176,7 +176,7 @@ label {
     margin-left: 15px;
 }
 .social-media > a:hover {
-    color: #d40a0a;
+    color: #FE5F13;
 }
 .header-top-area ul li a, .header-top-area a{
 	color: #fff;
@@ -192,3 +192,186 @@ label {
 /*******************************************************************
 *== Header Top Area End ==*
 ********************************************************************/
+.header-main-area {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+.logo {
+    display: inline-block;
+}
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-left: 35px;
+	position: relative;
+}
+.main-menu ul li a {
+    display: block;
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 30px 0px;
+    text-transform: uppercase;
+}
+.main-menu ul li:hover > a{color: #FE5F13}
+
+/* Sub menu */
+.main-menu ul li ul.submenu{
+	background: #222 none repeat scroll 0 0;
+	left: 0;
+	position: absolute;
+	top: 110%;
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	opacity: 0;
+	width: 250px;
+}
+.main-menu ul li:hover > ul.submenu{visibility: visible; opacity: 1; top: 100%;}
+.main-menu ul li ul.submenu li{
+	display: block;
+	margin: 0;
+    border-bottom: 1px solid #9c9c9c;
+}
+.main-menu ul li ul.submenu li:last-child{border:none}
+.main-menu ul li ul.submenu li a {
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.main-menu ul li ul.submenu li:hover > a{
+	background-color: #FE5F13;
+	color: #fff;
+}
+.main-menu ul li ul.submenu li ul.submenu{
+	left: 100%;
+}
+/* Header Button */
+.header-right-button a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: #FE5F13;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.header-right-icon ul {
+	position: relative;
+}
+.header-right-icon ul li a {
+    color: #fe5f13;
+}
+
+.header-right-icon ul li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: relative;
+}
+.header-right-icon {
+    position: relative;
+}
+.header-right-icon::before {
+    background: #efefef none repeat scroll 0 0;
+    content: "";
+    height: 20px;
+    left: 65%;
+    position: absolute;
+    top: 30px;
+    width: 2px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #ddd;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+	color: #ddd;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+	color: #ddd;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+	color: #fff;
+  }
+
+.search-form {
+    margin-top: 25px;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: #222;
+    width: 200px;
+    height: 45px;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+.header-right-icon ul li:hover .search-form {
+	visibility: visible;
+    opacity: 1;	
+	top: 100%;
+}
+.search-form input {
+    width: 100%;
+    background: none;
+    border: 0;
+    height: 45px;
+    padding-left: 10px;
+    color: #fff;
+}
+.search-form form {
+    position: relative;
+}
+
+.search-form button {
+    position: absolute;
+    background: none;
+    right: 0;
+    border: 0;
+    height: 100%;
+    color: #fff;
+    line-height: 45px;
+    width: 50px;
+	cursor: pointer;
+}
+
+.header-right-icon ul li ul.lang {
+    position: absolute;
+	top: 110%;
+    right: 0;
+    width: 200px;
+    background: #222;
+    margin-top: 25px;
+	transition: all 0.3s ease 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.header-right-icon ul li ul.lang li {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.header-right-icon ul li ul.lang li a {
+    color: #fff;
+    padding: 5px 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.header-right-icon ul li ul.lang li:hover > a {
+	background: #fe5f13;
+}
+.header-right-icon ul li:hover ul.lang {
+	visibility: visible;
+	opacity: 1;
+	top: 100%;
+}
