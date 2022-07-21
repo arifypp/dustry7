@@ -23,9 +23,9 @@
 
 
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:300,400,500,600,700,800');
  body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -165,3 +165,30 @@ label {
 	font-size: 14px;
 	opacity: 1;
 }
+/*******************************************************************
+*== Header Top Area Start ==*
+********************************************************************/
+.header-top-area {
+    background: #003865;
+}
+
+.social-media > a {
+    margin-left: 15px;
+}
+.social-media > a:hover {
+    color: #d40a0a;
+}
+.header-top-area ul li a, .header-top-area a{
+	color: #fff;
+}
+.header-top-area ul li a {
+    margin: 0px;
+    font-size: 14px;
+    font-family: 'Work Sans';
+}
+.header-top-area ul li a i {
+    padding-right: 5px;
+}
+/*******************************************************************
+*== Header Top Area End ==*
+********************************************************************/
