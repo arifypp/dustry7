@@ -375,3 +375,55 @@ label {
 	opacity: 1;
 	top: 100%;
 }
+
+/* Slider Area */
+.wrapper-box  {
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+.slider-active .slider-height {
+    height: 600px;
+}
+.slider-content h1 {
+    color: #fff;
+    font-size: 38px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.slider-content p {
+    color: #eee;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.slider-content h1 span {
+    color: #fe5f13;
+}
+.slider-content .slider-button {
+    display: inline-block;
+    margin-top: 20px;
+}
+.slider-content .slider-button a {
+    color: #fff;
+    background: #fe5f13;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #fe5f13;
+    margin-right: 10px;
+    transition: all 0.3s ease 0s;;
+}
+
+.slider-content .slider-button > a:hover {
+    background: none;
+}
+.slider-content .slider-button a:last-child {
+    background: none;
+}
+.slider-content .slider-button a:hover:last-child {
+    background: #fe5f13;
+}
+/* Slider Area */
