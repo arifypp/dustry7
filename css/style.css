@@ -230,6 +230,7 @@ label {
 	visibility: hidden;
 	opacity: 0;
 	width: 250px;
+    z-index: 999;
 }
 .main-menu ul li:hover > ul.submenu{visibility: visible; opacity: 1; top: 100%;}
 .main-menu ul li ul.submenu li{
@@ -312,6 +313,7 @@ label {
     transition: all 0.3s ease 0s;
     visibility: hidden;
     opacity: 0;
+    z-index: 1;
 }
 .header-right-icon ul li:hover .search-form {
 	visibility: visible;
@@ -352,6 +354,7 @@ label {
 	transition: all 0.3s ease 0s;
     visibility: hidden;
     opacity: 0;
+    z-index: 1;
 }
 
 .header-right-icon ul li ul.lang li {
@@ -427,3 +430,95 @@ label {
     background: #fe5f13;
 }
 /* Slider Area */
+
+/* About Area Start*/
+.about-content .ab-image.w-img {
+    margin-left: 90px;
+}
+
+.about-content .ab-image.w-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+.about-content {
+    position: relative;
+}
+
+.about-content .absp-text {
+    display: flex;
+    width: 270px;
+    padding: 30px;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 4%);
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.absp-text-1 {
+    top: -35px;
+    left: -5px;
+}
+
+.absp-text-2 {
+    bottom: -50px;
+    right: -65px;
+}
+
+.absp-text-1 i {
+    font-size: 50px;
+    color: #fe5f13;
+    margin-right: 20px;
+}
+.absp-text-2 i {
+    font-size: 50px;
+    color: #fe5f13;
+    margin-right: 20px;
+}
+.absp-text .absp-info h5 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+.absp-text .absp-info .absm-title {
+    font-size: 16px;
+    line-height: 26px;
+    display: inline-block;
+    color: #666;
+}
+.about-info {
+    margin-left: 65px;
+}
+.about-info h3 {
+    font-size: 38px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-info p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.about-info span {
+    font-size: 16px;
+    color: #fe5f13;
+    line-height: 30px;
+    border-bottom: 1px solid #fe5f13;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.about-info p span{
+    margin: 0;
+    border: 0;
+}
+.about-info a {
+    display: inline-block;
+    color: #fff;
+    background: #fe5f13;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #fe5f13;
+    margin-top: 20px;
+}
+/* About Area End */
