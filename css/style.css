@@ -522,3 +522,80 @@ label {
     margin-top: 20px;
 }
 /* About Area End */
+
+/* Service Area */
+.service-top {
+    display: inline-block;
+    width: 100%;
+}
+.service-inner .service-content {
+    display: block;
+    background: #fff;
+    overflow: hidden;
+    height: 60px;
+}
+.service-content .service-icon {
+    font-size: 16px;
+    color: #fff;
+    background: #fe5f13;
+    padding: 20px;
+    height: 100%;
+}
+.service-slides {
+    display: block;
+    width: 100%;
+}
+.service-text h4 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.service-text p {
+    margin: 0;
+}
+.service-inner:hover .service-text h4 {
+    color: #fe5f13;
+    transition: all 0.3s ease 0s;
+}
+.service-wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+.service-title span {
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.service-title h3 {
+    font-size: 38px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.service-top-right {
+    display: block;
+    color: #fff;
+}
+.service-top-right a {
+    display: inline-block;
+    color: #fff;
+    background: #fe5f13;
+    padding: 5px 15px;
+    align-items: center;
+    justify-content: center;
+}
+.service-top-right a i {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+/* Service area end */
