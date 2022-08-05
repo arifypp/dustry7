@@ -599,3 +599,148 @@ label {
 }
 
 /* Service area end */
+
+/* Project area start */
+.project-title span {
+    font-size: 16px;
+    color: #fe5f13;
+    line-height: 30px;
+    border-bottom: 1px solid #fe5f13;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.project-title h3 {
+    font-size: 38px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #313131;
+}
+.project-area{
+    position: relative;
+}
+.portfolio-thumb {
+    position: relative;
+}
+
+.portfolio-thumb::before {
+    content: "";
+    background: #fe5f13;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+.project-area:hover .portfolio-thumb::before{opacity: 0.8; visibility: visible;}
+
+.portfolio-thumb > img {
+    width: 100%;
+}
+
+.portfolio-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+.project-area:hover .portfolio-content{opacity: 1; visibility: visible;}
+.portfolio-content > h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #313131;
+}
+.portfolio-content > span {
+    font-size: 16px;
+    color: #313131;
+}
+
+.portfolio-content .icon {
+    display: block;
+    margin-bottom: 15px;
+}
+.portfolio-content .icon a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 16px;
+    color: #313131;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #313131;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+.portfolio-content .icon > a:hover{ background: #fff; color: #313131; border-color: #fff; }
+.portfolio-content .icon a > i {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.project-menu > button {
+    background: no-repeat;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    color: #3c3c3c;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    outline: none;
+}
+.project-menu > button:hover{
+    background: #FE5F13;
+    color: #fff;
+}
+.project-menu > button.active {
+    background: #FE5F13;
+    color: #fff;
+}
+
+.project-btn a {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: #FE5F13;
+    text-transform: uppercase;
+    color: #fff;
+}
+/* Project area end */
+
+/* Counter Start */
+.counter-area {
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.counter-content {
+    background: #fe5f13d4;
+    text-align: center;
+    padding: 20px;
+}
+
+.counter-content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.counting h4 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+}
+/* Counter end */
