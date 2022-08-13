@@ -768,8 +768,12 @@ label {
     cursor: pointer;
     border: 1px solid #f9f9f9;
     box-shadow: 0px 0px 10px #eee;
+    transition: all 0.3s ease 0s;
+    position: relative;
 }
-
+.blog-post-box:hover{
+    box-shadow: 0px 0px 10px #ddd;
+}
 .blog-post-content {
     padding: 10px 10px;
 }
@@ -780,8 +784,11 @@ label {
     font-weight: 700;
     color: #313131;
     margin-bottom: 10;
+    transition: all 0.3s ease 0s;
 }
-
+.blog-post-box:hover .blog-post-content h2 {
+    color: #FE5F13;
+}
 .blog-post-content p {
     font-size: 14px;
     line-height: 20px;
@@ -792,16 +799,21 @@ label {
 
 .blog-post-img {
     width: 100%;
+    display: block;
+    overflow: hidden;
 }
 
 .blog-post-img img {
     width: 100%;
+    transition: all 0.3s ease 0s;
 }
-
+.blog-post-box:hover .blog-post-img img{
+    transform: scale(1.2);
+}
 .post-meta {
     padding: 15px 10px;
     margin-top: 5px;
-    background: #eee;
+    background: #dcdcdc;
     position: relative;
     overflow: hidden;
 }
@@ -816,12 +828,20 @@ label {
     color: #313131;
     font-size: 12px;
     font-weight: 400;
+    padding-right: 10px;
+    transition: all 0.3s ease 0s;
 }
-
+.post-meta ul li:hover a {
+    color: #FE5F13;
+}
 .post-meta ul li:last-child {
+    color: #fff;
     text-align: right;
     float: right;
     z-index: 999;
+}
+.post-meta ul li:last-child a{
+    color: #fff;
 }
 .post-meta ul li:last-child a {
     background: #fe5f13;
@@ -830,4 +850,237 @@ label {
     right: 0;
     top: 0;
 }
+.post-tag {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fe5f13;
+    border-radius: 3px;
+}
+
+.post-tag a {
+    color: #fff;
+    padding: 10px ;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+}
 /* Blog area css end */
+
+/* Team Area */
+.clients-wrapper {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.clients-title h3 {
+    font-size: 38px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.clients-title span {
+    font-size: 16px;
+    color: #fe5f13;
+    line-height: 30px;
+    border-bottom: 1px solid #fe5f13;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.clients-box {
+    display: block;
+    background: #27283D;
+    padding: 10px;
+}
+
+.clients-content p {
+    color: #fff;
+    text-align: right;
+}
+
+.clients-box i {
+    color: #fff;
+    font-size: 50px;
+    text-align: right;
+    width: 100%;
+}
+
+.clients-info {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.clients-content-data {
+    float: right;
+    color: #fff;
+    margin-left: 20px;
+    text-align: right;
+    margin-top: 5px;
+}
+.clients-info img {
+    text-align: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid #fe5f13;
+    padding: 1px;
+    float: right;
+}
+
+.clients-content-data h4 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+.clients-content-data span {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+/* Team area end */
+
+/* Footer */
+.footer-title h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    line-height: 60px;
+    padding-bottom: 15px;
+}
+
+.footer-title h2::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: #fe5f13;
+    bottom: 0;
+    display: block;
+}
+
+.footer-title {
+    display: block;
+    margin-bottom: 30px;
+}
+.footer-content p {
+    color: #f2f2f2;
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.subscription-form {
+    position: relative;
+    margin: 25px 0px;
+    overflow: hidden;
+}
+
+.subscription-form input[type=email] {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+}
+.subscription-form input::placeholder {
+    color: #313131;
+}
+.subscription-form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    background: #fe5f13;
+    color: #fff;
+    cursor: pointer;
+}
+
+.social-icon ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.social-icon ul li a {
+    color: #eee;
+    transition: all 0.3s ease 0s;
+}
+.social-icon ul li:hover a{
+    color: #fe5f13;
+}
+
+.office-hours ul li {
+    color: #eee;
+    margin-bottom: 10px;
+    line-height: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.office-hours ul li:hover {
+    color: #fe5f13;
+}
+.office-hours ul li span {
+    float: left;
+    margin-right: 15px;
+    display: block;
+}
+.instagram-feed {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.instagram-feed a img {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.instagram-feed a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: #fe5f13;
+    height: 80px;
+    left: 0;
+    opacity: 0.2;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.instagram-feed a {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.instagram-feed a:hover::before{opacity: .5; visibility: visible;}
+.footer-bottom {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    color: #ddd;
+    margin-top: 50px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-bottom a {
+    color: #fe5f13;
+}

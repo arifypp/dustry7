@@ -74,6 +74,44 @@
     ]
   });
 
+  // Clients Slider
+  
+  $('.clients-slides').slick({
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed:3000,
+    arrows: false,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
   var grid = $('.grid').isotope({
     // set itemSelector so .grid-sizer is not used in layout
     itemSelector: '.grid-item',
