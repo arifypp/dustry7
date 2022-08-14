@@ -59,12 +59,12 @@ a:focus,
 a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
-	color: #2B96CC;
+	color: #fe5f13;
 	text-decoration: none;
 }
 a,
 button {
-	color: #1696e7;
+	color: #fe5f13;
 	outline: medium none;
 }
 .uppercase {
@@ -164,6 +164,21 @@ label {
 	color: #555555;
 	font-size: 14px;
 	opacity: 1;
+}
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+    outline:0px !important; 
+    box-shadow: none !important;
 }
 /*******************************************************************
 *== Header Top Area Start ==*
@@ -524,50 +539,11 @@ label {
 /* About Area End */
 
 /* Service Area */
-.service-top {
-    display: inline-block;
-    width: 100%;
-}
-.service-inner .service-content {
-    display: block;
-    background: #fff;
-    overflow: hidden;
-    height: 60px;
-}
-.service-content .service-icon {
-    font-size: 16px;
-    color: #fff;
-    background: #fe5f13;
-    padding: 20px;
-    height: 100%;
-}
-.service-slides {
-    display: block;
-    width: 100%;
-}
-.service-text h4 {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 500;
-    margin: 0;
-}
-.service-text p {
-    margin: 0;
-}
-.service-inner:hover .service-text h4 {
-    color: #fe5f13;
-    transition: all 0.3s ease 0s;
-}
-.service-wrapper {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-}
 .service-title span {
     font-size: 16px;
-    color: #fff;
+    color: #fe5f13;
     line-height: 30px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fe5f13;
     margin-bottom: 20px;
     display: inline-block;
 }
@@ -577,27 +553,57 @@ label {
     line-height: 50px;
     margin-bottom: 20px;
     font-weight: 700;
-    color: #fff;
+    color: #313131;
 }
 
-.service-top-right {
+.service-icon img {
+    height: 75px;
+}
+
+.service-box {
     display: block;
-    color: #fff;
-}
-.service-top-right a {
-    display: inline-block;
-    color: #fff;
-    background: #fe5f13;
-    padding: 5px 15px;
-    align-items: center;
-    justify-content: center;
-}
-.service-top-right a i {
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 300;
+    background: #fff none repeat scroll 0 0;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0px 30px 40px 0px rgb(32 85 125 / 6%);
+    -webkit-box-shadow: 0px 30px 40px 0px rgb(32 85 125 / 6%);
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
+.service-content h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+.service-content p {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.service-readmore a {
+    display: block;
+    color: #313131;
+    border: 1px solid #eee;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+.service-box:hover .service-content h4 {
+    color: #fe5f13;
+}
+
+.service-box:hover .service-readmore a {
+    color: #fe5f13;
+    border-color: #fe5f13;
+}
 /* Service area end */
 
 /* Project area start */
@@ -949,6 +955,104 @@ label {
     font-weight: 400;
 }
 /* Team area end */
+
+/* Contact Css */
+
+.contact-title span {
+    font-size: 16px;
+    color: #fe5f13;
+    line-height: 30px;
+    border-bottom: 1px solid #fe5f13;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.contact-title h3 {
+    font-size: 38px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #313131;
+}
+.form-area {
+    background: #fff;
+    padding: 58px 30px;
+    box-shadow: 0px 30px 40px 0px rgb(32 85 125 / 6%);
+    -webkit-box-shadow: 0px 30px 40px 0px rgb(32 85 125 / 6%);
+    width: 100%;
+}
+
+.form-area input[type=text], .form-area input[type=email], .form-area textarea, .form-area textarea:focus {
+    padding: 15px 15px;
+    border-radius: 0;
+    outline: 0;
+    border-color: #eee;
+    display: block;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.form-area select {
+    padding: 15px 15px;
+    outline: 0;
+    border-radius: 0;
+    border-color: #eee;
+    display: block;
+    height: 55px !important;
+    background-color: #f9f9f9;
+}
+.form-area select:focus{outline: none !important; border-color: #eee !important; box-shadow: none !important; background-color: #f9f9f9;}
+
+.form-area button[type=submit] {
+    border-color: #fe5f13;
+    background: #fe5f13;
+    color: #fff;
+    border-radius: 0;
+    padding: 15px 10px;
+}
+
+.subscribers-box {
+    padding: 50px 25px;
+    background: #011940;
+    color: #fff;
+    display: block;
+}
+
+.subscribers-box img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 100%;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.subscribers-box h4 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.subscribers-box p {
+    display: block;
+    color: #eee;
+    font-size: 16px;
+    margin-top: 15px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.subscribers-box a {
+    background: #fe5f13;
+    padding: 15px 40px;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Contact css end */
 
 /* Footer */
 .footer-title h2 {
